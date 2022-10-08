@@ -1,3 +1,18 @@
+#include <msp430.h> 
+
+
+/**
+ * main.c
+ */
+int sum(int a, int b)
+{
+
+    int sum = a + b;
+
+    return sum;
+
+}
+
 int main(void)
 {
 	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
@@ -14,3 +29,4 @@ int main(void)
 
 	return 0;
 }
+
